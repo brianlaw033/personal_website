@@ -1,0 +1,21 @@
+<section class='container avoid-navbar' id='blogs-page'>
+  <p id="notice"><%= notice %></p>
+
+  <h1>Blogs</h1>
+
+  <table>
+
+    <tbody>
+      <% @blogs.each do |blog| %>
+        <div class='thumbnail'>
+          <%= blog.name %><br />
+          <%= blog.content %>
+        </div>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Blog', new_blog_path %>
+</section>
