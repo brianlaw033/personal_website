@@ -1,21 +1,30 @@
 <section class='container avoid-navbar' id='blogs-page'>
   <p id="notice"><%= notice %></p>
-
-  <h1>Blogs</h1>
-
   <table>
-
+    <h1>
+      <% if user_signed_in?%>
+        <%= link_to 'New Blog', new_blog_path, id: 'new_blog', remote: true %>
+      <%end%>
+    </h1>
     <tbody>
       <% @blogs.each do |blog| %>
-        <div class='thumbnail'>
-          <%= blog.name %><br />
-          <%= blog.content %>
+        <div class='thumbnail blog-post'>
+          <h1><%= blog.name %></h1>
+
+            <p>
+              <span class='glyphicon glyphicon-time'></span> posted <%= time_ago_in_words(blog.created_at) %> ago
+            </p>
+          <%= image_tag(blog.image.url, class: 'blog-pic img-responsive')%><br />
+          <%= truncate blog.content, length: 200 %><br />
+          <%= link_to 'Read more...', blog_path(blog) %>
+
         </div>
       <% end %>
     </tbody>
   </table>
 
   <br>
-
-  <%= link_to 'New Blog', new_blog_path %>
+  <div class='text-center'>
+    <%= paginate @blogs%>
+  </div>
 </section>

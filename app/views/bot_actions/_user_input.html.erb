@@ -1,0 +1,11 @@
+<div class='chat-body clearfix'>
+  <div class='header'>
+    <strong class='primary-font'> Me </strong>
+    <small class='pull-right text-muted'>
+      <span class='glyphicon glyphicon-time'><%=time_ago_in_words(bot_action.created_at)%> ago</span>
+    </small>
+  </div>
+  <p>
+    <%= return_user_input %>
+  </p>
+</div>

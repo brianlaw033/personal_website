@@ -1,14 +1,26 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @blog.name %>
-</p>
-
-<p>
-  <strong>Content:</strong>
-  <%= @blog.content %>
-</p>
-
-<%= link_to 'Edit', edit_blog_path(@blog) %> |
-<%= link_to 'Back', blogs_path %>
+<section class='container avoid-navbar' id='blogs-page'>
+  <p id="notice"><%= notice %></p>
+  <table>
+    <tbody>
+      <div class='thumbnail blog-post'>
+        <h1>
+          <%= @blog.name %>
+          <% if user_signed_in?%>
+            <%= link_to 'Edit', edit_blog_path(@blog) %> |
+            <%= link_to 'Back', blogs_path %>
+          <%end%>
+        </h1>
+          <p>
+            <span class='glyphicon glyphicon-time'></span> posted <%= time_ago_in_words(@blog.created_at) %> ago
+          </p>
+        <%= image_tag(@blog.image.url, class: 'blog-pic img-responsive')%><br />
+        <%= @blog.content%><br />
+      </div>
+    </tbody>
+  </table>
+  <div class='thumbnail blog-post'>
+    <h3>Add New Comments</h3>
+    <%= render 'comments/form', commentable:@blog, newcomment:@newcomment%>
+    <%= render 'comments/comments', blog:@blog, comments:@comments, newcomment:@newcomment%>
+  </div>
+</section>

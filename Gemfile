@@ -33,6 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
+gem 'nbayes'
+gem 'haml-rails'
+gem 'redis', '~> 3.2'
+gem 'paperclip', '~> 4.1'
+gem 'kaminari'
+gem 'searchkick'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

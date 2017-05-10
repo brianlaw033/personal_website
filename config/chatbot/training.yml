@@ -1,0 +1,43 @@
+# Donot change the format as this would effect Naive Bayes classification methods.
+# Please feel free to add additional categories using the exact format.
+# resume_enquiry:
+#   show_resume_enquiry:
+#     - show me your resume
+#     - where can i find your resume
+#   download_resume_enquiry:
+#     - download your resume
+#     - can i download brian s resume
+#     - can you send me your resume
+#     - i want the link of your resume
+# yourself_enquiry:
+#   self_intro_enquiry:
+#     - tell me about yourself
+#     - who are you
+hi_enquiry:
+  - hi
+  - hello
+  - excuse me
+  - hey
+
+show_resume_enquiry:
+  - show me your resume
+  - where can i find your resume
+download_resume_enquiry:
+  - download your resume
+  - can i download brian s cv
+  - can you send me your resume
+  - i want the link of your resume
+self_intro_enquiry:
+  - tell me about yourself
+  - who are you
+greeting_enquiry:
+  - how are you
+  - how s your day
+  - how s your weekend
+  - I have a question
+contact_enquiry:
+  - can i have your contact
+  - what is your phone number
+  - how can I find you
+  - how do i get in touch with you
+  - where can i reach you
