@@ -4,7 +4,7 @@ $(document).on('turbolinks:load',function(){
      $(this).hide()
   });
   $(".toggleNewComment").click(function(){
-     $(this).parent().prev('div').children('div').toggleClass('collapse');
+     $(this).prev('div').children('div').toggleClass('collapse');
      $(this).hide()
   });
 });

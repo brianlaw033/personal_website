@@ -12,23 +12,18 @@
   <% end %>
 
   <form class='form-horizontal'>
-    <fieldset style='margin-top:50px;'>
-      <legend>
-        New Comment
-      </legend>
+    <fieldset>
       <div class="actions">
         <%= f.text_field :commentable_id, value: commentable.id ,type:'hidden'%>
         <%= f.text_field :commentable_type, value: commentable.class.name ,type:'hidden' %>
-        <div class="form-group">
-          <%= f.text_field :name ,placeholder:'Name', class: 'form-control'%>
+        <div class="form-group col-sm-8">
+          <%= f.text_field :comment, placeholder:"Reply", class: 'form-control input-sm'%>
         </div>
-        <div class="form-group">
-          <%= f.text_area :comment, placeholder:"Reply", class: 'form-control', rows: '5'%>
+        <div class="form-group col-sm-3">
+          <%= f.text_field :name ,placeholder:'Name', class: 'form-control input-sm'%>
         </div>
-        <div class="form-group">
-          <%= button_tag(type: 'submit', class: "btn btn-primary") do %>
-           <i class="fa fa-reply" aria-hidden="true"></i> Reply
-          <% end %>
+        <div class="form-group col-sm-1">
+          <%= f.submit '+', class:'btn btn-sm btn-primary' %>
         </div>
       </div>
     </fieldset>

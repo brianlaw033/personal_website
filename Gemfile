@@ -39,6 +39,7 @@ gem 'redis', '~> 3.2'
 gem 'paperclip', '~> 4.1'
 gem 'kaminari'
 gem 'searchkick'
+gem 'keynote'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -55,7 +56,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails'
-
+  gem 'compass-rails'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

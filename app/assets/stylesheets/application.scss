@@ -1,12 +1,19 @@
 /*
 *= require chat_bot
 *= require static_pages
+*= require comments
+*= require banner
+*= require avengers
+*= require projects
 */
 /* "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables" */
 @import "bootstrap-sprockets";
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One|Josefin+Sans|Lato');
+
+textarea{
+  resize: none;
+}
 
 .collapse{
   display: none;
@@ -37,10 +44,11 @@ body{
 }
 
 #home-banner{
-  background: url(asset-path('cover.jpg')) no-repeat center center fixed;
+  // background: url(asset-path('cover.jpg')) no-repeat center center fixed;
   background-size: cover;
+  background-color: black;
   width: 100%;
-  height: 700px;
+  height: 100vh;
   opacity:1;
 }
 
@@ -58,8 +66,13 @@ body{
 }
 
 #second-banner{
+  // height: 500px;
   background-color: #EDEEEF;
-  padding: 2cm 4cm 3cm 4cm;
+  padding: 3cm 0cm 3cm 0cm;
+}
+
+#second-banner > .container{
+  padding-right: 10vw;
 }
 
 #third-banner{
@@ -102,6 +115,12 @@ body{
 .pro-icon-fix{
   top:20%;
 }
+
+//ranking
+.fa-star, .fa-star-half{
+  color:#FBBC05;
+}
+
 
 
 //blogs_path

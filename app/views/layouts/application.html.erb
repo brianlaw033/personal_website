@@ -51,14 +51,13 @@
     </nav>
     <br />
     <br />
-          <%= yield %>
-        <div class='toggle navbar-fixed-bottom col-xs-offset-10 btn btn-primary'>
-          Chat with me
-        </div>
-        <div>
-          <%= render 'layouts/chat_bot', bot_action: @bot_action%>
-        </div>
-
+    <%= yield %>
+    <div class='toggle navbar-fixed-bottom col-xs-offset-10 btn btn-primary'>
+      Chat with me
+    </div>
+    <div>
+      <%= render 'layouts/chat_bot', bot_action: @bot_action%>
+    </div>
     <footer class="footer-distributed">
 
 			<div class="footer-left">

@@ -18,9 +18,8 @@
       </div>
     </tbody>
   </table>
-  <div class='thumbnail blog-post'>
-    <h3>Add New Comments</h3>
-    <%= render 'comments/form', commentable:@blog, newcomment:@newcomment%>
+  <div class='blog-post'>
     <%= render 'comments/comments', blog:@blog, comments:@comments, newcomment:@newcomment%>
+    <%= render 'comments/form', commentable:@blog, newcomment:@newcomment%>
   </div>
 </section>

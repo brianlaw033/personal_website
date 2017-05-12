@@ -1,6 +1,6 @@
 <%comments.each do|comment|%>
   <div class='thumbnail'>
-    <table style='margin:20px;'>
+    <table style='margin:20px; width:100%;'>
       <tbody>
         <tr>
           <td class='col-xs-8'>
@@ -9,23 +9,25 @@
             <%end%>
             <%=comment.comment%>
           </td>
-          <td class='col-xs-4'>
-            <%=time_ago_in_words(@blog.created_at)%>
+          <td class='col-xs-2'>
+            <%=time_ago_in_words(@blog.created_at)%> ago
+          </td>
+          <td class='col-xs-2'>
+            By: <%=comment.name%>
           </td>
         </tr>
       </tbody>
     </table>
     <div class='comment collapse'>
-      <%= render 'comments/form',commentable:comment, newcomment:@newcomment%>
+      <%= render 'comments/small_form',commentable:comment, newcomment:@newcomment%>
     </div>
   </div>
-    <ul>
-      <a class="toggleNewComment">+ Reply</a>
-      <%if comment.comments.length != 0%>
-        <a class="toggleComment">+ Expand</a>
-        <div class='comment collapse'>
-          <%= render 'comments/comments', blog:@blog, comments:comment.comments, newcomment: @newcomment%>
-        </div>
-      <%end%>
-    </ul>
+    <a class="toggleNewComment">+ Reply</a>
+    <%if comment.comments.length != 0%>
+      <a class="toggleComment">+ Expand</a>
+      <br /><br />
+      <div class='comment collapse'>
+        <%= render 'comments/comments', blog:@blog, comments:comment.comments, newcomment: @newcomment%>
+      </div>
+    <%end%>
 <%end%>
