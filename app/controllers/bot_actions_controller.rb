@@ -15,7 +15,7 @@ class BotActionsController < ApplicationController
       format.js
     end
     if @return_bot_response == 'download'
-      redirect_to "https://drive.google.com/uc?export=download&id=0B7G0FkLWmf8DYnVjb3N0VVRyRzQ"
+      redirect_to "https://drive.google.com/uc?export=download&id=0B7G0FkLWmf8DWGFzVFlGRklLQm8"
     end
   end
 

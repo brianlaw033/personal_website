@@ -11,28 +11,21 @@ vocab:
   me: 1
   hey: 1
   show: 1
-  your: 1
   resume: 1
-  where: 1
-  can: 1
-  i: 1
   find: 1
   download: 1
-  brian: 1
-  s: 1
   cv: 1
-  you: 1
   send: 1
-  want: 1
-  the: 1
   link: 1
-  of: 1
   tell: 1
   about: 1
   yourself: 1
   who: 1
   are: 1
+  you: 1
   how: 1
+  s: 1
+  your: 1
   day: 1
   weekend: 1
   I: 1
@@ -40,15 +33,16 @@ vocab:
   a: 1
   question: 1
   contact: 1
-  what: 1
-  is: 1
   phone: 1
   number: 1
+  can: 1
   do: 1
+  i: 1
   get: 1
   in: 1
   touch: 1
   with: 1
+  where: 1
   reach: 1
 data:
   hi_enquiry:
@@ -63,33 +57,18 @@ data:
   show_resume_enquiry:
     :tokens:
       show: 1
-      me: 1
-      your: 2
       resume: 2
-      where: 1
-      can: 1
-      i: 1
       find: 1
-    :total_tokens: 10
+    :total_tokens: 4
     :examples: 2
   download_resume_enquiry:
     :tokens:
       download: 2
-      your: 3
       resume: 3
-      can: 2
-      i: 2
-      brian: 1
-      s: 1
       cv: 1
-      you: 1
       send: 1
-      me: 1
-      want: 1
-      the: 1
       link: 1
-      of: 1
-    :total_tokens: 22
+    :total_tokens: 8
     :examples: 4
   self_intro_enquiry:
     :tokens:
@@ -119,25 +98,21 @@ data:
     :examples: 4
   contact_enquiry:
     :tokens:
-      can: 3
-      i: 3
-      have: 1
-      your: 2
       contact: 1
-      what: 1
-      is: 1
       phone: 1
       number: 1
       how: 2
+      can: 2
       I: 1
       find: 1
       you: 3
       do: 1
+      i: 2
       get: 1
       in: 1
       touch: 1
       with: 1
       where: 1
       reach: 1
-    :total_tokens: 28
+    :total_tokens: 21
     :examples: 5

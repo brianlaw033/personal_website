@@ -18,15 +18,14 @@ hi_enquiry:
   - hello
   - excuse me
   - hey
-
 show_resume_enquiry:
-  - show me your resume
-  - where can i find your resume
+  - show resume
+  - find resume
 download_resume_enquiry:
-  - download your resume
-  - can i download brian s cv
-  - can you send me your resume
-  - i want the link of your resume
+  - download resume
+  - download cv
+  - send resume
+  - link resume
 self_intro_enquiry:
   - tell me about yourself
   - who are you
@@ -36,8 +35,8 @@ greeting_enquiry:
   - how s your weekend
   - I have a question
 contact_enquiry:
-  - can i have your contact
-  - what is your phone number
+  - contact
+  - phone number
   - how can I find you
   - how do i get in touch with you
   - where can i reach you
