@@ -41,6 +41,7 @@ gem 'kaminari'
 gem 'searchkick'
 gem 'keynote'
 gem 'rails_12factor', group: :production
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
