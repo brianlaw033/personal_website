@@ -18,6 +18,40 @@ h1 {
   font-size: 2.5rem;
 }
 
+.about_me > h1{
+  letter-spacing: 5px;
+}
+
+.about_me > p{
+  font-size: 20px;
+  padding: 20px;
+}
+
+.bubble
+{
+position: relative;
+width: 490px;
+padding: 30px;
+background: #FFFFFF;
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border-radius: 13px;
+}
+
+.bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 12px 15px 12px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -15px;
+top: 42px;
+}
+
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
