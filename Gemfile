@@ -40,6 +40,7 @@ gem 'paperclip', '~> 4.1'
 gem 'kaminari'
 gem 'searchkick'
 gem 'keynote'
+gem 'rails_12factor', group: :production
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
